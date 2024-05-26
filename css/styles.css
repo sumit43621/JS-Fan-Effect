@@ -1,0 +1,33 @@
+.buttonGroup > button:first-child{
+    border: none;
+    padding: 30px 10px;
+    background-color: #fff;
+    width: 150px;
+    background-image: url('../img/onoff.png');
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    background-position: 0px -12px;
+}
+
+.fanBox{
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/fan-blades-png.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10% auto;
+    animation-name: fan;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+@keyframes fan {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(359deg);
+    }
+}
